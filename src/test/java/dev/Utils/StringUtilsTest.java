@@ -14,9 +14,8 @@ public class StringUtilsTest {
 
 	@Test
 	public void testWithoneValuetrue() {
-		StringUtils smallString = new StringUtils();
-		Boolean test1 = (smallString.levenshteinDistance("hotel", "timothy") != 1);
-		Assert.assertEquals(true, test1);
+		Boolean test1 = (StringUtils.levenshteinDistance("hotel", "timothy") != 2);
+		Assert.assertTrue(test1);
 	}
 
 	@Test
